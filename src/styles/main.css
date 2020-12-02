@@ -1,0 +1,151 @@
+body {
+    width: 100%;
+    margin: 0;
+    overflow-x: hidden;
+
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Header*/
+.header {
+    background: black;
+    color: white;
+    font-family: "Special Elite";
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.title {
+    text-align: center;
+}
+.title h2 {
+    font-weight: 200;
+}
+.link {
+    text-decoration: none;
+    color: gray;
+} 
+.link h1 {
+    margin: .25rem; 
+    font-weight: 200;
+    font-size: 3vw;
+}    
+.links {
+    padding: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*End Header*/
+
+/*Layout*/
+.layout {
+    background: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+/*End Layout*/
+
+/*Index */
+.top {
+    margin-top: 8vh;
+    background-color: black;
+    height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.image-wrap {
+    width: 30%;
+}
+.intro-wrap {
+    width: 40%;
+    color: white;
+    font-family: Special Elite;
+}
+.intro-wrap h1 {
+    margin-bottom: 0;
+    font-weight: 200;
+    
+}
+
+.post {
+    font-family: Questrial;
+}
+.post h2 {
+    
+    font-weight: 200;
+}
+
+/*Index*/
+
+/*Footer*/
+.footer {
+    text-align: center;
+    color: white;
+    font-family: Special Elite;
+}
+/*End Footer*/
+
+
+@media only screen and (max-width: 1400px) {       
+    .internal {
+        width: 55%;
+    }  
+}
+@media only screen and (max-width: 1300px) {
+    .internal {
+        width: 60%;
+    } 
+}
+@media only screen and (max-width: 1200px) {
+    .internal {
+        width: 65%;
+    } 
+}
+@media only screen and (max-width: 1100px) {
+    .internal {
+        width: 70%;
+    } 
+}
+@media only screen and (max-width: 850px) {         
+    .link h1 {
+        font-size: 1.8rem;
+    }        
+    .internal link {
+        font-size: 2.4vw;
+    }
+
+            
+        
+   
+}
+
+@media only screen and (max-width: 600px) {           
+    .link h1 {
+        font-size: 1.7rem;
+    }    
+    .internal {
+        width: 80%; 
+    }
+    .internal link {
+        font-size: 3vw; 
+    }
+        
+    
+}
+
