@@ -2,63 +2,12 @@ body {
     width: 100%;
     margin: 0;
     overflow-x: hidden;
-
 }
 
 img {
     max-width: 100%;
     height: auto;
 }
-
-/*Header*/
-.header {
-    background: black;
-    color: white;
-    font-family: "Special Elite";
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-.content {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-}
-.title {
-    text-align: center;
-}
-.title h2 {
-    font-weight: 200;
-}
-.link {
-    text-decoration: none;
-    color: gray;
-} 
-.link h1 {
-    margin: .25rem; 
-    font-weight: 200;
-    font-size: 3vw;
-}    
-.links {
-    padding: 0 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-/*End Header*/
-
-/*Layout*/
-.layout {
-    background: black;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 100vh;
-}
-/*End Layout*/
 
 /*Index */
 .top {
@@ -79,6 +28,7 @@ img {
 }
 .intro-wrap h1 {
     margin-bottom: 0;
+    letter-spacing: .25rem;
     font-weight: 200;
     
 }
@@ -87,19 +37,38 @@ img {
     font-family: Questrial;
 }
 .post h2 {
-    
+    letter-spacing: .15rem;
+    font-weight: 200;
+}
+.post button {
+    padding: 5px;
+    background: gray;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.post button:hover {
+    border: 1px solid gray;
+    background: transparent;
+    color: gray;
+}
+.bottom {
+    display: flex;
+    justify-content: space-around;
+}
+.card {
+    color: white;
+    font-family: Special Elite;
+    text-align: center;
+}
+.card h2 {
     font-weight: 200;
 }
 
-/*Index*/
+/*End Index*/
 
-/*Footer*/
-.footer {
-    text-align: center;
-    color: white;
-    font-family: Special Elite;
-}
-/*End Footer*/
+
 
 
 @media only screen and (max-width: 1400px) {       

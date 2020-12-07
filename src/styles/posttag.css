@@ -1,0 +1,15 @@
+.posttag {
+    margin-bottom: 10px;
+}
+.posttag-link {
+    text-decoration-color: white;
+}
+.posttag-link p {
+    color: gray;
+    text-decoration: none;
+    font-family: Rubik;
+    margin-top: 0; 
+}
+.posttag-link small:hover {
+    text-decoration: underline;
+}

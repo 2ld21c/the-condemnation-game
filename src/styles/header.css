@@ -1,0 +1,41 @@
+/*Header*/
+.header {
+    background: black;
+    color: white;
+    font-family: "Special Elite";
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.title {
+    text-align: center;
+    letter-spacing: .5rem;
+}
+.title h2 {
+    font-weight: 200;
+    letter-spacing: .25rem;
+}
+.link {
+    text-decoration: none;
+    color: gray;
+} 
+.link h1 {
+    margin: .25rem; 
+    font-weight: 200;
+    font-size: 3vw;
+}    
+.links {
+    padding: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*End Header*/

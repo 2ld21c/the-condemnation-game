@@ -4,6 +4,7 @@ import Layout from "../components/layout";
 import PostTag from "../components/posttag";
 import Img from "gatsby-image"
 import SEO from "../components/seo";
+import "../styles/article.css"
 
 const Article = ({data}) => {
     const post = data.markdownRemark;

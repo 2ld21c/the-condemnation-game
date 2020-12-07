@@ -17,6 +17,13 @@ module.exports = {
       {
         resolve: `gatsby-source-filesystem`,
         options: {
+          name: `book`,
+          path: `${__dirname}/book`
+        }
+      },
+      {
+        resolve: `gatsby-source-filesystem`,
+        options: {
           name: `articles`,
           path: `${__dirname}/articles`
         }

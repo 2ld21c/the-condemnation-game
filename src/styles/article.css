@@ -1,0 +1,105 @@
+/*Article*/
+
+.article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+    padding: 0 10px;
+    font-family: Raleway;
+    transition: background-color 0.25s ease-out;
+}
+.article-main {
+    margin: auto;
+    margin-top: 20vh;
+    width: 40%;
+    text-align: center;
+}
+.article-main-toggle {
+    display: flex;
+    margin: 0 auto;
+}
+.article-main-toggle span {
+    font-size: 1.2em;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-top: 4px;
+    margin-right: 2px;
+}
+.article-main-toggle span:last-child {
+    margin-top: 5px;
+}
+.article-main-toggle-switch {
+    position: relative;
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+}
+.article-main-toggle-switch input[type="checkbox"].checkbox {
+    width: 40px;
+    height: 10px;
+    background: #555;
+    position: relative;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    vertical-align: 2px;
+    outline: none;
+}
+.article-main-toggle-switch input[type="checkbox"].checkbox:checked + label {
+    left: 30px;
+}
+.article-main-toggle-switch input[type="checkbox"].checkbox:focus-visible {
+    outline: solid 2px white;
+}
+.article-main-toggle-switch input[type="checkbox"].checkbox + label {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    position: absolute;
+    left: 2px;
+    background: #fff;
+    background-color: dodgerblue; 
+}
+.article-main h1 {
+    margin-bottom: 0;
+    color: white;
+}
+.article-main small {
+    font-style: italic;
+    color: lightgray;
+}
+.article-main hr {
+    border: .5px solid lightgray;
+}
+.article-main-body {
+    text-align: left;
+    padding: 10px 0;
+    color: lightgray;
+    letter-spacing: .05rem;
+}
+.article-main-tags {
+    padding: 10px;
+}
+
+.dark-mode {
+    background-color: white;
+    color: lightgray;
+    transition: background-color 0.25s ease-out;
+}
+.dark-mode h1 {
+    color: black;
+}
+.dark-mode small {
+    color: black;
+}
+.dark-mode .article-main-body {
+    color: black;
+}

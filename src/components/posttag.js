@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+import "../styles/posttag.css"
 
 const PostTag = ({tag}) => {
     return (
