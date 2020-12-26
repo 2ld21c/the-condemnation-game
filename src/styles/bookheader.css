@@ -1,0 +1,69 @@
+h1 {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+.bookheader {
+    width: 100%;
+    background: black;
+    color: white;
+    position: fixed;
+    z-index: 1;
+}
+.bookheader-content {
+    margin: 1% 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bookheader-title {
+    font-family: Special Elite;
+    font-weight: 200;
+    letter-spacing: 0.025em;
+}
+.bookheader-content-links {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    font-family: Questrial;
+    letter-spacing: .05em;
+}
+.bookheader-content-links-mobile {
+    display: none;
+}
+/* .bookheader-content-links a {
+    text-decoration: none;
+    color: white;
+} */
+.bookheader-content-links a:hover {
+    text-decoration: underline;
+    color: lightgray;
+}
+
+@media(max-width: 1000px) {
+    .bookheader-content-links {
+        width: 40%;
+    }
+}
+@media(max-width: 900px) {
+    .bookheader-content {
+        margin: 2% 0;
+        flex-direction: column;
+    }
+    .bookheader-content-links {
+        display: none;
+    }
+    .bookheader-content-links-mobile {
+        display: flex;
+        justify-content: space-around;
+        font-family: Questrial;
+        letter-spacing: .05em;
+    }
+}
+@media(max-width: 480px) {
+    .bookheader-title {
+        font-size: 1.65rem;
+    }
+}

@@ -11,7 +11,7 @@ const Header = ({ siteTitle }) => {
       <div className="content">
           <div className="title">
               <Link to="/" className="link"><h1>{siteTitle}</h1></Link>
-              <h2>An unflinching look at the human condition</h2>
+              {/* <h2>An unflinching look at the human condition</h2> */}
           </div>
       </div>
     </div>

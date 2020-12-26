@@ -18,6 +18,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 exports.createPages = async ({ graphql, actions }) => {
     const { createPage } = actions
     const articleTemplate = path.resolve(`./src/templates/articleTemplate.js`);
+    const bookTemplate = path.resolve(`./src/templates/bookTemplate.js`)
     const result = await graphql(`
       query {
         allMarkdownRemark {
@@ -37,13 +38,24 @@ exports.createPages = async ({ graphql, actions }) => {
     `)
   
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      if (node.frontmatter.pagetype === "book") {
+        createPage({
+          path: node.fields.slug,
+          component: bookTemplate,
+          context: {
+            slug: node.fields.slug
+          }
+        })
+      } else {
         createPage({
           path: node.fields.slug,
           component: articleTemplate,
           context: {
             slug: node.fields.slug
           }
-        }); 
+        })
+      }
+
     })
 
     // Tag pages:

@@ -11,6 +11,7 @@ const Index = ({data}) => {
   const posts = data.allMarkdownRemark.edges
     return (
         <Layout>
+          <div className="index">
             <div className="top">
               <div className="image-wrap">
                   <Img fluid={data.mainPic.childImageSharp.fluid} />
@@ -28,7 +29,7 @@ const Index = ({data}) => {
                     />
                     <p>{posts[0].node.excerpt}</p>
                     <Link to={posts[0].node.fields.slug}>
-                      <button>Read Full Submission</button>
+                      <button>Continue Reading</button>
                     </Link>             
                   </div>
                 </div>
@@ -48,6 +49,8 @@ const Index = ({data}) => {
                 <h2>References</h2>
               </div>
             </div>
+          </div>
+            
         </Layout>
     )
 }

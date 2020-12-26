@@ -1,0 +1,37 @@
+.booklayout {
+    /* background: #F7F4F0; */
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+.booklayout-main {
+    width: 50%;
+    margin: 15vh auto;
+    min-height: 80vh;
+    background-color: white;
+    box-shadow: 5px 1px 10px;
+}
+
+@media(max-width: 1400px) {
+    .booklayout-main {
+        width: 60%;
+    }
+}
+@media(max-width: 1100px) {
+    .booklayout-main {
+        width: 70%;
+    }
+}
+@media(max-width: 900px) {
+    .booklayout-main {
+        width: 80%;
+    }
+}
+@media(max-width: 700px) {
+    .booklayout-main {
+        width: 90%;
+    }
+}
+
