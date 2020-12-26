@@ -8,7 +8,7 @@ import {ImNewspaper, ImLibrary, ImBook} from "react-icons/im"
 import "../styles/main.css"
 
 const Index = ({data}) => {
-  console.log(data)
+  
   const posts = data.allMarkdownRemark.edges
     return (
         <Layout>
@@ -16,7 +16,7 @@ const Index = ({data}) => {
           <div className="index">
             <div className="top">
               <div className="image-wrap">
-                  <Img fluid={data.mainPic.childImageSharp.fluid} />
+                  {/* <Img fluid={data.mainPic.childImageSharp.fluid} /> */}
               </div>
               <div className="intro-wrap">
                 <h1>The Latest</h1>

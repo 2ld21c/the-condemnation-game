@@ -24,8 +24,13 @@ img {
     align-items: center;
 }
 .image-wrap {
-    width: 30%;
-    
+    width: 50%;
+    height: 100%;
+    background-image: url("../images/mother_child2.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    box-shadow: -120px 0 50px 100px #000 inset;
 }
 .intro-wrap {
     width: 40%;
@@ -72,7 +77,26 @@ img {
 .card h2 {
     font-weight: 200;
 }
-
+@media(max-width: 1400px) {
+    .image-wrap {
+        box-shadow: -80px 0 50px 100px #000 inset;
+    }
+}
+@media(max-width: 1300px) {
+    .image-wrap {
+        box-shadow: -50px 0 50px 100px #000 inset;
+    }
+}
+@media(max-width: 1200px) {
+    .image-wrap {
+        box-shadow: -30px 0 50px 100px #000 inset;
+    }
+}
+@media(max-width: 1000px) {
+    .image-wrap {
+        box-shadow: 0 -20px 50px 100px #000 inset;
+    }
+}
 @media(max-width: 750px) {
     .top {
         margin-top: 10vh;
@@ -80,8 +104,12 @@ img {
         height: 100%;
     }
     .image-wrap {
-        width: 50%;
+        width: 350px;
+        height: 350px;
         margin: 5%;
+        background-size: cover;
+        box-shadow: -20px 0 50px 20px #000 inset;
+       
     }
     .intro-wrap {
         width: 60%;
