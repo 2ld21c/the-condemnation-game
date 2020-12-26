@@ -2,6 +2,7 @@ import React from "react"
 import { Link } from "gatsby"
 import Layout from "../components/layout"
 import Img from "gatsby-image"
+import SEO from "../components/seo"
 import {GiBookshelf, GiBookmarklet, GiScrollQuill} from "react-icons/gi"
 import {ImNewspaper, ImLibrary, ImBook} from "react-icons/im"
 import "../styles/main.css"
@@ -11,6 +12,7 @@ const Index = ({data}) => {
   const posts = data.allMarkdownRemark.edges
     return (
         <Layout>
+          <SEO title="Home" />
           <div className="index">
             <div className="top">
               <div className="image-wrap">
