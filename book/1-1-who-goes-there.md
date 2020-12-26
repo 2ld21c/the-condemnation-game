@@ -58,11 +58,12 @@ Now you’re back in D4 again with the engineer sitting across the table from yo
 “No, but, technically speaking,...”
 
 “So now you’re going to explain things technically to me? I helped design the device.”
+
 “So, what happened to the, uh,... disintegrated me?”
 
 “It’s best that we don’t talk about that right now; you’ve had a long day, and this must be a lot to absorb,...”
 
-You wake up in your bed drenched in sweat, the empty whiskey glass on the nightstand inches from your face.  It seems you’d forgotten to turn of the lamp before nodding off. You turn it off now, get out of bed, and go to the window. The moon casts an eerie glow upon the world. You’re quite sleepy and would like to go back to bed, but you’re haunted by the notion that a different person may wake up in your bed in the morning.
+You wake up in your bed drenched in sweat, the empty whiskey glass on the nightstand inches from your face.  It seems you’d forgotten to turn off the lamp before nodding off. You turn it off now, get out of bed, and go to the window. The moon casts an eerie glow upon the world. You’re quite sleepy and would like to go back to bed, but you’re haunted by the notion that a different person may wake up in your bed in the morning.
 
 <br>
 
